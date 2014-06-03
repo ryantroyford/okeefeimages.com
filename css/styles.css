@@ -1,0 +1,16 @@
+/*--------------- SIDEBAR -------------------- */
+
+.bar{
+	background-color: yellow;
+}
+
+.logo{
+	display: block;
+	background-color: red;
+}
+
+/*--------------- CONTENT -------------------- */
+
+.content{
+	background-color: green;
+}
