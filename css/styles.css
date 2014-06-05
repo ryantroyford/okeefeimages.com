@@ -3,6 +3,18 @@
 	height: 75px;
 }
 
-.footer{opacity: .4;}
+.logo img{opacity: .7;}
+
+.footer{color:#999;}
 
 .border{border: 1px solid red;}
+
+@media only screen and (max-width:640px) {
+
+	.galleries{text-align: center;}
+	.galleries li {
+		display: inline-block;
+		margin: 10px;
+	}
+
+}
