@@ -4,10 +4,20 @@
 }
 
 .logo img{opacity: .7;}
-
 .footer{color:#999;}
-
 .border{border: 1px solid red;}
+.content{
+	/* width: auto; */
+	overflow-x: scroll;
+	white-space: nowrap;
+	margin-top: 25px;
+	max-height: 100%;
+}
+
+.content p{display: inline-block;}
+.content p img{max-height: 80%;}
+
+.galleries li:last-child {margin-top: 40px;}
 
 @media only screen and (max-width:640px) {
 
@@ -17,4 +27,12 @@
 		margin: 10px;
 	}
 
+	.galleries li:last-child {margin-top: none;}
+
+	.content{width: 100%;}
+	.content p{display: block;}
+	.content p img{
+		max-height: none; 
+		max-width: 100%;
+	}
 }
