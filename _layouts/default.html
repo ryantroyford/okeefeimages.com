@@ -1,0 +1,32 @@
+<html>
+
+<head>
+	<link href='/css/base.css' rel='stylesheet'>
+	<link href='/css/styles.css' rel='stylesheet'>
+</head>
+
+<body>
+
+	<div class='col2 bar'>
+		<div class='logo center'><a href='/'><img src="../img/logo.png"></a></div>
+		<div class='nav pad4'>
+			<ul class='galleries'>
+				{% for item in site.categories.galleries %}
+  					<li><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></li>
+				{% endfor %}
+				<li><a href='mailto:Dok6100@aol.com' class='contact'>Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class='col10 content'>
+		{{content}}
+	</div>
+
+	<div class='footer col12 center inline pad2'>
+		<small>All work copyright Dennis O'Keefe 2014</small>
+	</div>
+
+</body>
+
+</html>
